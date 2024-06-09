@@ -574,13 +574,13 @@ section,
     font-size: 65px;
   }
   .section h3 {
-    font-size: 55px;
+    font-size: 50px;
   }
   .section h4 {
-    font-size: 45px;
+    font-size: 32px;
   }
   .section h5 {
-    font-size: 35px;
+    font-size: 24px;
   }
 
 }
@@ -597,15 +597,15 @@ section,
   }
 
   .section h3 {
-    font-size: 40px;
-  }
-
-  .section h4 {
     font-size: 30px;
   }
 
+  .section h4 {
+    font-size: 24px;
+  }
+
   .section h5 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 

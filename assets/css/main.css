@@ -569,11 +569,43 @@ section,
   overflow: clip;
 }
 
+@media (max-width: 1739px) {
+  .section h2 {
+    font-size: 65px;
+  }
+  .section h3 {
+    font-size: 55px;
+  }
+  .section h4 {
+    font-size: 45px;
+  }
+  .section h5 {
+    font-size: 35px;
+  }
+
+}
+
 @media (max-width: 1199px) {
 
   section,
   .section {
     scroll-margin-top: 76px;
+  }
+
+  .section h2 {
+    font-size: 50px;
+  }
+
+  .section h3 {
+    font-size: 40px;
+  }
+
+  .section h4 {
+    font-size: 30px;
+  }
+
+  .section h5 {
+    font-size: 20px;
   }
 }
 
@@ -659,40 +691,47 @@ section,
   padding: 10%;
 }
 
-.irl-home h2 {
+h2 {
   margin: 0;
   font-size: 100px;
   font-weight: bold;
   font-family: Poppins;
 }
 
-.irl-home h2 span {
+h2 span {
   letter-spacing: 0px;
 }
 
-.irl-home h2 .color-green {
+h2 .color-green {
   color:#CEFD85;
 }
 
-.irl-home h3 {
+h3 {
   margin: 0;
   font-size: 70px;
   font-family: Poppins;
 }
 
-.irl-home h3 .color-green {
+h3 .color-green {
   color:#CEFD85;
 }
 
-.irl-home h4 {
+h4 {
   margin: 0;
   font-size: 40px;
   font-family: Poppins;
 }
 
+h5 {
+  margin: 0;
+  font-size: 20px;
+  font-family: Poppins;
+}
+
 .irl-home .chat-button {
-  margin-top:-30%;
-  margin-left:91%;
+  position: absolute;
+  right: -50px;
+  bottom: 20px;
 }
 
 .chat-button .gradient-background {
@@ -717,29 +756,6 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.irl-block-2 h2 {
-  margin: 0;
-  font-size: 100px;
-  font-weight: bold;
-  font-family: Poppins;
-}
-
-.irl-block-2 h4 {
-  margin: 0;
-  font-size: 40px;
-  font-family: Poppins;
-}
-
-.irl-block-2 h5 {
-  margin: 0;
-  font-size: 20px;
-  font-family: Poppins;
-}
-
-.irl-block-2 h2 .color-green {
-  color:#CEFD85;
 }
 
 .irl-left-right-gradient-background {
@@ -793,29 +809,6 @@ section,
   z-index: 3;
 }
 
-.irl-block-3 h2 {
-  margin: 0;
-  font-size: 100px;
-  font-weight: bold;
-  font-family: Poppins;
-  text-align: right;
-}
-
-.irl-block-3 h4 {
-  margin: 0;
-  font-size: 40px;
-  font-family: Poppins;
-  text-align: right;
-}
-
-.irl-block-3 h2 .color-green {
-  color:#CEFD85;
-}
-
-.irl-block-3 h4 .color-green {
-  color:#CEFD85;
-}
-
 .irl-btn-outline-gradient {
   /*border-image: linear-gradient(to right, #6532E3, #56BB6E);*/
   position: relative;
@@ -852,36 +845,6 @@ section,
   width: 100%;
   min-height: calc(100vh - 92px);
   position: relative;
-}
-
-.irl-block-4 h2 {
-  margin: 0;
-  font-size: 100px;
-  font-weight: bold;
-  font-family: Poppins;
-}
-
-.irl-block-4 h3 {
-  margin: 0;
-  font-size: 70px;
-  font-weight: bold;
-  font-family: Poppins;
-}
-
-.irl-block-4 h4 {
-  margin: 0;
-  font-size: 40px;
-  font-family: Poppins;
-}
-
-.irl-block-4 h5 {
-  margin: 0;
-  font-size: 20px;
-  font-family: Poppins;
-}
-
-.irl-block-4 h2 .color-green {
-  color:#CEFD85;
 }
 
 /* Carousel classes */
@@ -959,29 +922,12 @@ section,
   z-index: 3;
 }
 
-.irl-contact h2 {
-  margin: 0;
-  font-size: 100px;
-  font-weight: bold;
-  font-family: Poppins;
-}
-
-.irl-contact h2 span {
-  letter-spacing: 0px;
-}
-
-.irl-contact h2 .color-green {
-  color:#CEFD85;
-}
-
-.irl-contact h4 {
-  margin: 0;
-  font-size: 30px;
-  font-family: Poppins;
-}
-
 .irl-text-align-left {
   text-align: left;
+}
+
+.irl-text-align-right {
+  text-align: right;
 }
 
 .irl-contact input {
@@ -1001,53 +947,54 @@ section,
   linear-gradient(to right,  #6532E3, #56BB6E);
 }
 
+@media (max-width: 1739px) {
+
+  .irl-home .button-size {
+    width: 100px;
+    height: 100px;
+  }
+
+  .irl-home .chat-button {
+    right: -40px;
+  }
+}
+
+@media (max-width: 1199px) {
+
+  .irl-home .button-size {
+    width: 80px;
+    height: 80px;
+  }
+
+  .irl-home .chat-button {
+    right: -30px;
+  }
+
+}
+
 @media (max-width: 768px) {
   .irl-home {
     display: block;
   }
 
-  .irl-home h2 {
+  h2 {
     font-size: 32px;
   }
 
-  .irl-home h3 {
+  h3 {
     font-size: 28px;
   }
 
-  .irl-home h4 {
+  h4 {
     font-size: 24px;
+  }
+
+  h5 {
+    font-size: 14px;
   }
 
   .irl-block-2 {
     display: block;
-  }
-
-  .irl-block-2 h2 {
-    font-size: 32px;
-  }
-
-  .irl-block-2 h3 {
-    font-size: 28px;
-  }
-
-  .irl-block-2 h4 {
-    font-size: 24px;
-  }
-
-  .irl-block-2 h5 {
-    font-size: 14px;
-  }
-
-  .irl-block-3 h2 {
-    font-size: 32px;
-  }
-
-  .irl-block-3 h3 {
-    font-size: 28px;
-  }
-
-  .irl-block-3 h4 {
-    font-size: 24px;
   }
 
   .irl-home p {
@@ -1058,34 +1005,6 @@ section,
     display: block;
   }
 
-  .irl-block-4 h2 {
-    font-size: 32px;
-  }
-
-  .irl-block-4 h3 {
-    font-size: 28px;
-  }
-
-  .irl-block-4 h4 {
-    font-size: 24px;
-  }
-
-  .irl-block-4 h5 {
-    font-size: 14px;
-  }
-
-  .irl-contact h2 {
-    font-size: 32px;
-  }
-
-  .irl-contact h3 {
-    font-size: 28px;
-  }
-
-  .irl-contact h4 {
-    font-size: 24px;
-  }
-
   .footer h4 {
     font-size: 24px;
   }
@@ -1094,9 +1013,13 @@ section,
     font-size: 16px;
   }
 
-  .button-size {
+  .irl-home .button-size {
     width: 60px;
     height: 60px;
+  }
+
+  .irl-home .chat-button {
+    right: -20px;
   }
 
   .irl-button-display-block {

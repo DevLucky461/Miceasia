@@ -109,6 +109,10 @@ h6 {
   box-shadow: 0px 0 18px color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
+.irl-color-green {
+  color:#CEFD85;
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -586,7 +590,7 @@ section,
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 60px;
-  margin-right: 60px;
+  /*margin-right: 60px;*/
   scroll-margin-top: 92px;
   overflow: clip;
 }
@@ -673,7 +677,7 @@ section,
   --default-color: #ffffff;
   --heading-color: #ffffff;
   width: 100%;
-  min-height: calc(100vh - 92px);
+  /*min-height: calc(100vh - 92px);*/
   position: relative;
   padding: 10%;
   display: flex;
@@ -724,18 +728,10 @@ h2 span {
   letter-spacing: 0px;
 }
 
-h2 .color-green {
-  color:#CEFD85;
-}
-
 h3 {
   margin: 0;
   font-size: 70px;
   font-family: Poppins;
-}
-
-h3 .color-green {
-  color:#CEFD85;
 }
 
 h4 {
@@ -772,7 +768,7 @@ h5 {
   --default-color: #ffffff;
   --heading-color: #ffffff;
   width: 100%;
-  min-height: calc(100vh - 92px);
+  /*min-height: calc(100vh - 92px);*/
   position: relative;
   display: flex;
   align-items: center;
@@ -800,9 +796,8 @@ h5 {
   --default-color: #ffffff;
   --heading-color: #ffffff;
   width: 100%;
-  min-height: calc(100vh - 92px);
+  /*min-height: calc(100vh - 92px);*/
   position: relative;
-  padding: 10%;
   align-items: center;
   justify-content: center;
 }
@@ -828,19 +823,19 @@ h5 {
 .irl-block-3 .container {
   position: relative;
   z-index: 3;
+  margin-top: 10%;
 }
 
 .irl-btn-outline-gradient {
   /*border-image: linear-gradient(to right, #6532E3, #56BB6E);*/
   position: relative;
-  padding: 10px 20px;
+  padding: 20px 20px;
   margin: 10px;
   color: #fff;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 20px;
   border: 2px solid transparent;
   border-radius: 50px;
-  background-image: linear-gradient(black, black),
+  background-image: linear-gradient(#0E0A28, #0E0A28),
   linear-gradient(to right,  #6532E3, #56BB6E);
   background-origin: border-box;
   background-clip: padding-box, border-box;
@@ -854,7 +849,8 @@ h5 {
 }
 
 .irl-block-3 .div-padding {
-  padding: 10% 0;
+  padding: 0 0 3% 0;
+  margin-top: 3%
 }
 
 /*--------------------------------------------------------------
@@ -865,7 +861,7 @@ h5 {
   --default-color: #ffffff;
   --heading-color: #ffffff;
   width: 100%;
-  min-height: calc(100vh - 92px);
+  /*min-height: calc(100vh - 92px);*/
   position: relative;
 }
 
@@ -913,9 +909,8 @@ h5 {
   --default-color: #ffffff;
   --heading-color: #ffffff;
   width: 100%;
-  min-height: calc(100vh - 92px);
+  /*min-height: calc(100vh - 92px);*/
   position: relative;
-  padding: 10%;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -969,6 +964,75 @@ h5 {
   linear-gradient(to right,  #6532E3, #56BB6E);
 }
 
+/*--------------------------------------------------------------
+# About us page
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Title section
+--------------------------------------------------------------*/
+
+.irl-aboutus-title {
+  --background-color: #000000;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  width: 100%;
+  /*min-height: calc(100vh - 92px);*/
+  position: relative;
+  padding: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.irl-aboutus-title img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.irl-aboutus-title:before {
+  content: "";
+  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+
+/*--------------------------------------------------------------
+# About us section
+--------------------------------------------------------------*/
+
+.irl-aboutus-block-2 {
+  --background-color: #000000;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  width: 100%;
+  /*min-height: calc(100vh - 92px);*/
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.irl-gradient-background-2 {
+  background: linear-gradient(#61086F, #0E0A28);
+}
+
+.irl-aboutus-block-2-img-margin-left {
+  margin-left: -10%;
+}
+
+.irl-aboutus-block-2-text-margin {
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
 @media (max-width: 1739px) {
 
   .button-size {
@@ -982,6 +1046,16 @@ h5 {
   .button-size {
     width: 80px;
     height: 80px;
+  }
+}
+
+@media (max-width: 430px) {
+  .section h2 {
+    font-size: 30px;
+  }
+
+  .irl-contact {
+    padding: 0;
   }
 }
 

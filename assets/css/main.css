@@ -91,11 +91,11 @@ h6 {
 
 .header .logo {
   line-height: 1;
+  margin-left: 5%;
 }
 
 .header .logo img {
-  max-height: 64px;
-  margin-right: 8px;
+  max-height: 100px;
 }
 
 .header .logo h1 {
@@ -116,144 +116,12 @@ h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/* Desktop Navigation */
-@media (min-width: 1200px) {
-  .navmenu {
-    padding: 0;
-  }
-
-  .navmenu ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style: none;
-    align-items: center;
-  }
-
-  .navmenu li {
-    position: relative;
-  }
-
-  .navmenu>ul>li {
-    white-space: nowrap;
-    padding: 15px 14px;
-  }
-
-  .navmenu>ul>li:last-child {
-    padding-right: 0;
-  }
-
-  .navmenu a,
-  .navmenu a:focus {
-    color: var(--nav-color);
-    font-size: 15px;
-    padding: 0 2px;
-    font-family: var(--nav-font);
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    white-space: nowrap;
-    transition: 0.3s;
-    position: relative;
-  }
-
-  .navmenu a i,
-  .navmenu a:focus i {
-    font-size: 12px;
-    line-height: 0;
-    margin-left: 5px;
-    transition: 0.3s;
-  }
-
-  .navmenu>ul>li>a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: -6px;
-    left: 0;
-    background-color: var(--nav-hover-color);
-    visibility: hidden;
-    width: 0px;
-    transition: all 0.3s ease-in-out 0s;
-  }
-
-  .navmenu a:hover:before,
-  .navmenu li:hover>a:before,
-  .navmenu .active:before {
-    visibility: visible;
-    width: 100%;
-  }
-
-  .navmenu li:hover>a,
-  .navmenu .active,
-  .navmenu .active:focus {
-    color: var(--nav-hover-color);
-  }
-
-  .navmenu .dropdown ul {
-    margin: 0;
-    padding: 10px 0;
-    background: linear-gradient(#6532E3, #56BB6E);
-    display: block;
-    position: absolute;
-    visibility: hidden;
-    left: 14px;
-    top: 130%;
-    opacity: 0;
-    transition: 0.3s;
-    border-radius: 4px;
-    z-index: 99;
-    box-shadow: 0px 0px 30px color-mix(in srgb, var(--default-color), transparent 85%);
-  }
-
-  .navmenu .dropdown ul li {
-    min-width: 200px;
-  }
-
-  .navmenu .dropdown ul a {
-    padding: 10px 20px;
-    font-size: 15px;
-    text-transform: none;
-    color: var(--nav-dropdown-color);
-  }
-
-  .navmenu .dropdown ul a i {
-    font-size: 12px;
-  }
-
-  .navmenu .dropdown ul a:hover,
-  .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover>a {
-    color: var(--nav-dropdown-hover-color);
-  }
-
-  .navmenu .dropdown:hover>ul {
-    opacity: 1;
-    top: 100%;
-    visibility: visible;
-  }
-
-  .navmenu .dropdown .dropdown ul {
-    top: 0;
-    left: -90%;
-    visibility: hidden;
-  }
-
-  .navmenu .dropdown .dropdown:hover>ul {
-    opacity: 1;
-    top: 0;
-    left: -100%;
-    visibility: visible;
-  }
-}
 
 /* Mobile Navigation */
-@media (max-width: 1199px) {
+@media (max-width: 2500px) {
   .mobile-nav-toggle {
     color: var(--nav-color);
-    font-size: 28px;
+    font-size: 50px;
     line-height: 0;
     margin-right: 10px;
     cursor: pointer;
@@ -261,16 +129,18 @@ h6 {
   }
 
   .navmenu {
-    padding: 0;
+    /*padding-right: 5%;*/
+    padding: 0 5% 0 0 ;
     z-index: 9997;
   }
 
   .navmenu ul {
     display: none;
     position: absolute;
-    inset: 60px 20px 20px 20px;
-    padding: 10px 0;
-    margin: 0;
+    list-style-type: none;
+    inset: 0;
+    padding: 1% 5%;
+    margin-left: 50%;
     border-radius: 6px;
     background: linear-gradient(#56BB6E, #6532E3);
     border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
@@ -278,6 +148,14 @@ h6 {
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
+  }
+
+  .navmenu img {
+    width: 30%;
+  }
+
+  .navmenu ul li {
+    padding-top: 5%;
   }
 
   .navmenu a,
@@ -354,9 +232,9 @@ h6 {
   .mobile-nav-active .mobile-nav-toggle {
     color: #fff;
     position: absolute;
-    font-size: 32px;
-    top: 15px;
-    right: 15px;
+    font-size: 70px;
+    top: 25px;
+    right: 25px;
     margin-right: 0;
     z-index: 9999;
   }
@@ -437,12 +315,6 @@ h6 {
 
 .footer .credits a {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
-}
-
-.irl-text-white {
-  color:white;
-  font-family: Poppins;
-  font-size: 14px;
 }
 
 /*--------------------------------------------------------------

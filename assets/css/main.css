@@ -109,7 +109,7 @@ h6 {
   box-shadow: 0px 0 18px color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
-.irl-color-green {
+.irlColorGreen {
   color:#CEFD85;
 }
 
@@ -396,7 +396,7 @@ h6 {
   text-align: center;
 }
 
-.irl-line {
+.irlLine {
   background: linear-gradient(to right,  #6532E3, #56BB6E);
   width: 100%;
   height: 2px;
@@ -595,22 +595,6 @@ section,
   overflow: clip;
 }
 
-@media (max-width: 1739px) {
-  .section h2 {
-    font-size: 65px;
-  }
-  .section h3 {
-    font-size: 50px;
-  }
-  .section h4 {
-    font-size: 32px;
-  }
-  .section h5 {
-    font-size: 24px;
-  }
-
-}
-
 @media (max-width: 1199px) {
 
   section,
@@ -618,21 +602,7 @@ section,
     scroll-margin-top: 76px;
   }
 
-  .section h2 {
-    font-size: 50px;
-  }
 
-  .section h3 {
-    font-size: 30px;
-  }
-
-  .section h4 {
-    font-size: 24px;
-  }
-
-  .section h5 {
-    font-size: 18px;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -672,7 +642,7 @@ section,
 /*--------------------------------------------------------------
 # Home Section
 --------------------------------------------------------------*/
-.irl-home {
+.irlHome {
   --background-color: #000000;
   --default-color: #ffffff;
   --heading-color: #ffffff;
@@ -685,7 +655,7 @@ section,
   justify-content: center;
 }
 
-.irl-home img {
+.irlHome img {
   position: absolute;
   inset: 0;
   display: block;
@@ -695,7 +665,7 @@ section,
   z-index: 1;
 }
 
-.irl-home:before {
+.irlHome:before {
   content: "";
   background: color-mix(in srgb, var(--background-color), transparent 30%);
   position: absolute;
@@ -703,17 +673,17 @@ section,
   z-index: 2;
 }
 
-.irl-home .container {
+.irlHome .container {
   position: relative;
   z-index: 3;
 }
 
-.irl-home .left-section {
+.irlHome .left-section {
   margin : 5%;
   margin-top : -10%;
 }
 
-.irl-home .right-section {
+.irlHome .right-section {
   padding: 10%;
 }
 
@@ -763,7 +733,7 @@ h5 {
 /*--------------------------------------------------------------
 # Block-2 Section
 --------------------------------------------------------------*/
-.irl-block-2 {
+.irlBlock2 {
   --background-color: #000000;
   --default-color: #ffffff;
   --heading-color: #ffffff;
@@ -775,7 +745,7 @@ h5 {
   justify-content: center;
 }
 
-.irl-left-right-gradient-background {
+.irlLeftRightGradientBackground {
   background: linear-gradient(to right, #6532E3, #56BB6E);
 }
 
@@ -784,14 +754,14 @@ h5 {
   height: 120px;
 }
 
-.irl-block-2 .img-padding {
+.irlBlock2 .img-padding {
   padding: 10px;
 }
 
 /*--------------------------------------------------------------
 # Block-3 Section
 --------------------------------------------------------------*/
-.irl-block-3 {
+.irlBlock3 {
   --background-color: #000000;
   --default-color: #ffffff;
   --heading-color: #ffffff;
@@ -802,7 +772,7 @@ h5 {
   justify-content: center;
 }
 
-.irl-block-3 img {
+.irlBlock3 img {
   position: absolute;
   inset: 0;
   display: block;
@@ -812,7 +782,7 @@ h5 {
   z-index: 1;
 }
 
-.irl-block-3:before {
+.irlBlock3:before {
   content: "";
   background: color-mix(in srgb, var(--background-color), transparent 30%);
   position: absolute;
@@ -820,13 +790,13 @@ h5 {
   z-index: 2;
 }
 
-.irl-block-3 .container {
+.irlBlock3 .container {
   position: relative;
   z-index: 3;
   margin-top: 10%;
 }
 
-.irl-btn-outline-gradient {
+.irlBtnOutlineGradient {
   /*border-image: linear-gradient(to right, #6532E3, #56BB6E);*/
   position: relative;
   padding: 20px 20px;
@@ -843,12 +813,12 @@ h5 {
   width: 100%;
 }
 
-.irl-btn-outline-gradient:hover {
+.irlBtnOutlineGradient:hover {
     background-image: linear-gradient(transparent, transparent),
   linear-gradient(to right,  #6532E3, #56BB6E);
 }
 
-.irl-block-3 .div-padding {
+.irlBlock3 .div-padding {
   padding: 0 0 3% 0;
   margin-top: 3%
 }
@@ -856,7 +826,7 @@ h5 {
 /*--------------------------------------------------------------
 # Block-4 Section
 --------------------------------------------------------------*/
-.irl-block-4 {
+.irlBlock4 {
   --background-color: #0E0A28;
   --default-color: #ffffff;
   --heading-color: #ffffff;
@@ -873,11 +843,11 @@ h5 {
   padding-top: 30px;
 }
 
-.irl-carousel-left-margin {
+.irlCarouselLeftMargin {
   margin-left: 25%;
 }
 
-.irl-next-icon {
+.irlNextIcon {
   background-image: url("../img/next-icon.png");
   display: inline-block;
   width: 6rem;
@@ -904,7 +874,7 @@ h5 {
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.irl-contact {
+.irlContact {
   --background-color: #000000;
   --default-color: #ffffff;
   --heading-color: #ffffff;
@@ -916,7 +886,7 @@ h5 {
   text-align: center;
 }
 
-.irl-contact img {
+.irlContact img {
   position: absolute;
   inset: 0;
   display: block;
@@ -926,7 +896,7 @@ h5 {
   z-index: 1;
 }
 
-.irl-contact:before {
+.irlContact:before {
   content: "";
   background: color-mix(in srgb, var(--background-color), transparent 30%);
   position: absolute;
@@ -934,32 +904,24 @@ h5 {
   z-index: 2;
 }
 
-.irl-contact .container {
+.irlContact .container {
   position: relative;
   z-index: 3;
 }
 
-.irl-text-align-left {
-  text-align: left;
-}
-
-.irl-text-align-right {
-  text-align: right;
-}
-
-.irl-contact input {
+.irlContact input {
   background-color: #100B30;
   color: white;
   /*border-image: linear-gradient(to right, #6532E3, #56BB6E);*/
 }
 
-.irl-contact textarea {
+.irlContact textarea {
   background-color: #100B30;
   color: white;
   /*border-image: linear-gradient(to right, #6532E3, #56BB6E);*/
 }
 
-.irl-contact .irl-btn-outline-gradient {
+.irlContact .irlBtnOutlineGradient {
   background-image: linear-gradient(transparent, transparent),
   linear-gradient(to right,  #6532E3, #56BB6E);
 }
@@ -972,7 +934,7 @@ h5 {
 # Title section
 --------------------------------------------------------------*/
 
-.irl-aboutus-title {
+.irlAboutusTitle {
   --background-color: #000000;
   --default-color: #ffffff;
   --heading-color: #ffffff;
@@ -985,7 +947,7 @@ h5 {
   justify-content: center;
 }
 
-.irl-aboutus-title img {
+.irlAboutusTitle img {
   position: absolute;
   inset: 0;
   display: block;
@@ -995,7 +957,7 @@ h5 {
   z-index: 1;
 }
 
-.irl-aboutus-title:before {
+.irlAboutusTitle:before {
   content: "";
   background: color-mix(in srgb, var(--background-color), transparent 30%);
   position: absolute;
@@ -1003,35 +965,61 @@ h5 {
   z-index: 2;
 }
 
+.irlZindex {
+   z-index: 3;
+}
 
-/*--------------------------------------------------------------
-# About us section
---------------------------------------------------------------*/
-
-.irl-aboutus-block-2 {
+.irlAboutusBlock {
   --background-color: #000000;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   width: 100%;
   /*min-height: calc(100vh - 92px);*/
   position: relative;
+  padding: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 
-.irl-gradient-background-2 {
+.irlAboutusBlock img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/*--------------------------------------------------------------
+# Block-2 section
+--------------------------------------------------------------*/
+
+.irlGradientBackground2 {
+  --background-color: #000000;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
   background: linear-gradient(#61086F, #0E0A28);
 }
 
-.irl-aboutus-block-2-img-margin-left {
+.irlAboutusBlock2ImgMarginLeft {
   margin-left: -10%;
 }
 
-.irl-aboutus-block-2-text-margin {
+.irlAboutusBlock2TextMargin {
   margin-left: 10%;
   margin-top: 5%;
 }
+
+/*--------------------------------------------------------------
+# Block-3 section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Block-4 section
+--------------------------------------------------------------*/
 
 @media (max-width: 1739px) {
 
@@ -1039,6 +1027,20 @@ h5 {
     width: 100px;
     height: 100px;
   }
+
+  h2 {
+    font-size: 65px;
+  }
+  h3 {
+    font-size: 50px;
+  }
+  h4 {
+    font-size: 32px;
+  }
+  h5 {
+    font-size: 24px;
+  }
+
 }
 
 @media (max-width: 1199px) {
@@ -1047,6 +1049,31 @@ h5 {
     width: 80px;
     height: 80px;
   }
+
+  .irlAboutusBlock2ImgMarginLeft {
+    margin-left: 0;
+  }
+
+  .irlAboutusBlock2TextMargin {
+    margin-left: 0;
+    margin-top: 5%;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 430px) {
@@ -1054,13 +1081,13 @@ h5 {
     font-size: 30px;
   }
 
-  .irl-contact {
+  .irlContact {
     padding: 0;
   }
 }
 
 @media (max-width: 768px) {
-  .irl-home {
+  .irlHome {
     display: block;
   }
 
@@ -1080,15 +1107,15 @@ h5 {
     font-size: 14px;
   }
 
-  .irl-block-2 {
+  .irlBlock2 {
     display: block;
   }
 
-  .irl-home p {
+  .irlHome p {
     font-size: 20px;
   }
 
-  .irl-block-4 {
+  .irlBlock4 {
     display: block;
   }
 
@@ -1109,15 +1136,15 @@ h5 {
     right: -35px;
   }
 
-  .irl-button-display-block {
+  .irlButtonDisplayBlock {
     display: block;
   }
 
-  .irl-carousel-left-margin {
+  .irlCarouselLeftMargin {
     margin-left: 0;
   }
 
-  .irl-next-icon {
+  .irlNextIcon {
     width: 2rem;
     height: 2rem;
   }

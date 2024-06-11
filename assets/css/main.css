@@ -12,8 +12,8 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
+  --default-font: "Poppins";
+  --heading-font: "Poppins",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
 
@@ -784,13 +784,11 @@ h5 {
 .irlContact input {
   background-color: #100B30;
   color: white;
-  /*border-image: linear-gradient(to right, #6532E3, #56BB6E);*/
 }
 
 .irlContact textarea {
   background-color: #100B30;
   color: white;
-  /*border-image: linear-gradient(to right, #6532E3, #56BB6E);*/
 }
 
 .irlContact .irlBtnOutlineGradient {
@@ -884,14 +882,6 @@ h5 {
   margin-left: 10%;
   margin-top: 5%;
 }
-
-/*--------------------------------------------------------------
-# Block-3 section
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Block-4 section
---------------------------------------------------------------*/
 
 @media (max-width: 1739px) {
 

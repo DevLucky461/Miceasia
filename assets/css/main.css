@@ -18,7 +18,7 @@
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
+:root {
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #4e4e4e; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #0a090f; /* Color for headings, subheadings and title throughout the website */
@@ -687,6 +687,7 @@ h5 {
   background-clip: padding-box, border-box;
   transition: color 0.3s, background-color 0.3s;
   width: 100%;
+  text-wrap: nowrap;
 }
 
 .irlArrowBtnGradient {
@@ -732,19 +733,15 @@ h5 {
 
 swiper-container {
   width: 75%;
-  height: 100%;
   position: relative;
   margin-right:0;
   margin-left:30%;
 }
 
 swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-position: right;
+  background-size: cover;
+  width: 80%;
 }
 
 swiper-slide img {
@@ -752,10 +749,6 @@ swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-swiper-slide {
-  width: 80%;
 }
 
 .swiper-caption {
@@ -1040,6 +1033,16 @@ swiper-slide {
     margin-left: 0;
   }
 
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+  }
+
+  .swiper-slide {
+    width: 80%;
+  }
 
   .swiper-caption {
     bottom: 5%; /* Adjust the vertical position as needed */
